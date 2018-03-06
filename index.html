@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FIFA Travel</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<a href="">Home</a>
+		<a href="">Flights</a>
+		<a href="">Hotels</a>
+		<a href="">Matches</a>
+		<a href="http://www.fifa.com/worldcup" target="_blank">FIFA</a>
+	</nav>
+	<h1>FIFA Travel Plan</h1>
+	<p> Hey you! Let's keep all reservations here. It's just a basic version, I'll make it pretty later.
+		I put together Saint Petersburg hotels (click <a href="peter.html">here</a> or go to Hotels --> Saint Petersburg) there is some information with pictures to compare them all and a map on the bottom.</p>
+		<div class="smile"><img src="emoji.png"></div>
+<button class="collapsible">Flights</button>
+<div class="content">
+  <h3>Moscow - Miami - Moscow</h3>
+  <h3>Moscow - Sochi </h3>
+  <h3>Sochi - Moscow </h3>
+  <h3>Moscow - Kemerovo </h3>
+  <h3>Kemerovo - St Petersburg </h3>
+  <h3>St Petersburg - Moscow </h3>
+</div>
+<button class="collapsible">Hotels</button>
+<div class="content">
+  <h3>Sochi</h3>
+	  <a href="https://www.booking.com/hotel/ru/sea-galaxy-congress-amp-spa.html?aid=318615;label=New_English_EN_FL%3A_Florida_23537581465-T4h5BO_xSeXQRBaO6NvEogS99510921385%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi2644905101%3Atiaud-146342137510%3Adsa-206305369465%3Alp9011879%3Ali%3Adec%3Adm;sid=1b3478bff12957ddfec96a92d756e935" target="_blank" class="sea">SeaGalaxy Hotel Congress and Spa</a>
+  <h3>Moscow</h3>
+  <a href="peter.html"><h3>Saint Petersburg</h3></a>
+</div>
+<button class="collapsible">Matches</button>
+<div class="content">
+  <h3> Jun, 30 Sochi</h3>
+  <h3> Jul, 1 Moscow</h3>
+  <h3> Jul, 3 Moscow</h3>
+  <h3> Jul, 14 St Petersburg</h3>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

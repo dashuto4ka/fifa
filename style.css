@@ -1,0 +1,166 @@
+body {
+	font-family: Roboto;
+	background: #effbff;
+}
+
+h1, .stp h2 {
+	text-align: center;
+}
+
+a h3 {
+	text-decoration: none;
+	color: black;
+}
+
+.content a {
+	text-decoration: none;
+}
+
+.stp h3 {
+	font-family: cursive;
+	font-size: 1.5rem;
+}
+
+.hotel {
+	width: 90%;
+	margin: 2rem auto;
+	background: #d8f7ff;
+	border: solid 2px #44d0f4;
+	padding: 1rem;
+}
+
+.hotel-img {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 1rem;
+}
+
+.hotel-img img {
+	width: 30%;
+}
+
+.price {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.star {
+	
+}
+
+ol li {
+	list-style: none;
+}
+
+img.bookingdotcom {
+	width: 7rem;
+}
+
+span.red {
+	color: red;
+}
+
+span.green {
+	color: green;
+}
+
+span.brown {
+	color: brown;
+}
+
+.jumbotron {
+	width: 100%;
+	height: 25rem;
+	background: url("stp.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.gm {
+	width: 14rem;
+	margin: 0 auto;
+}
+
+.gm img {
+	width: 100%;
+}
+
+/* Collapsible #d8f7ff*/
+
+.collapsible {
+    background-color: #44d0f4;
+    color: white;
+    cursor: pointer;
+    padding: 1.2rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover, nav a:hover {
+    background-color: #d8f7ff;
+	color: black;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #effbff;
+}
+
+.content a {
+	color: black;
+}
+
+.content a:hover, .content a h3:hover {
+	color: grey;
+}
+
+nav {
+	background-color: #44d0f4;
+	padding: 1.2rem;
+	padding-left: 0;
+	border: 2px solid #44d0f4;
+
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 1.2rem;
+}
+
+.sea {
+	margin-left: 1rem;
+}
+
+.smile {
+	width: 4rem;
+	margin: 0 auto;
+}
+
+.smile img {
+	width: 100%;
+}
+
+@media screen and (max-width: 770px) {
+	.hotel-img {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hotel-img img {
+		width: 90%;
+		padding-bottom: 1rem;
+	}
+}
+
+
+
+
